@@ -1,0 +1,230 @@
+ 
+#contact.res-group {
+    position: relative;
+    animation: contact-height 5s ease-in-out 1;
+}
+
+#avatar {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background: radial-gradient(circle, var(--primary-color) 0%, var(--gradient-1) 100%);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+#avatar::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    width: 90%;
+    height: 90%;
+    background-image: url("https://raw.githubusercontent.com/TJRawlins/portfolio_v1/main/img/tonytoonlight.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+#avatar-wrapper {
+   animation: rotate-in-down-left 2s ease 1;
+}
+
+#contact-title {
+    margin: 0.25rem 0 .5rem 0;
+    color: var(--tertiary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#contact-text {
+    display: flex;
+    gap: 1rem;
+}
+
+#contact-text i {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    color: var(--tertiary-color);
+}
+
+#contact-text span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:max-content;
+    font-size: 4rem;
+    color: var(--tertiary-color);
+    z-index: -5;
+}
+
+#contact-text a:hover i {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* GROUPS */
+.res-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.res-group h1 {
+    margin: 1.5rem  0;
+}
+
+.res-group h1 i {
+    color: var(--tertiary-color);
+    margin-right: 1rem;
+}
+  
+  .deconstructed {
+    position: relative;
+    margin-top: 1rem;
+    color: transparent;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.03em;
+    z-index: 3;
+  }
+  
+  .deconstructed > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ebf0fe;
+    pointer-events: none;
+  }
+  
+  .deconstructed > div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 10s 1;
+  }
+  
+  .deconstructed > div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 10s 1;
+  }
+  
+  .deconstructed > div:nth-child(3) {
+     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 10s 1;
+  }
+  
+  .deconstructed > div:nth-child(4) {
+     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 10s 1;
+  }
+  
+
+/* intro - deconstruct name */
+  @keyframes deconstructed1 {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    26% {
+      transform: translateX(0%);
+    }
+    83% {
+        transform: translateX(-0.1%);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes deconstructed2 {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    24% {
+      transform: translateX(0.5%);
+    }
+    82% {
+        transform: translateX(-0.2%);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes deconstructed3 {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    22% {
+      transform: translateX(0%);
+    }
+    81% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes deconstructed4 {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+  }
+
+/* intro - shrink contact section */
+  @keyframes contact-height {
+    0% {
+        height: 100vh;
+    }
+    50% {
+        height: 100vh;
+    }
+    100% {
+        height: 445px;
+    }    
+}
+
+/* intro - roll avatar in */
+@keyframes rotate-in-down-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* Media query */
+@media screen and (max-width: 810px)  {
+  #contact.res-group {
+    margin: 0;
+  }
+
+  .deconstructed {
+    text-align: center;
+  }
+}

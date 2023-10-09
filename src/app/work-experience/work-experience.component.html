@@ -1,0 +1,18 @@
+<div class="res-group experience">
+    <h1><i class="fa-solid fa-briefcase"></i>{{title}}</h1>
+    <div class="work-group" *ngFor="let exp of experiences" (click)="clickEvent()"  
+    [ngClass]="status ? 'active' : 'inactive'">
+        <h5>{{exp.dates}}</h5>
+        <div>
+            <h3>
+                <span>{{exp.company}}<span class="text-separator">|</span></span>
+                <span>{{exp.role}}<span class="text-separator">|</span></span>
+                <span>{{exp.location}}</span>
+            </h3>
+            <ul>
+                <li *ngFor="let b of exp.bullets" [innerHTML]="b"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="solid"></div>

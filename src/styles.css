@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+    --primary-color: #5eead4;
+    --secondary-color: #ebf0fe;
+    --tertiary-color: #7c8db9;
+    --primary-color-dull: #50b8a8;
+    --primary-color-opaque: #5eead51a;
+    --primary-color-false-opaque: #253e5a;
+    /* --opaque: #7c8db907; */
+    --opaque: #7c8db91e;
+    --gradient-1: #202f58;
+    --gradient-2: #061224;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    background: radial-gradient(circle, var(--gradient-1), var(--gradient-2) 60%);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+canvas {
+    filter: blur();
+}
+
+div.solid {
+    margin-left: 35vw;
+    width: 30vw;
+    border-radius: 50%;
+    border-top: 5px solid var(--opaque);
+}
+
+  /* GROUPS */
+.res-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.res-group h1 {
+    margin: 1.5rem  0;
+    font-weight: bold;
+}
+
+.res-group h1 i {
+    color: var(--tertiary-color);
+    margin-right: 1rem;
+}
+
+/* MOUSE SHADOW */
+div#mouse-shadow {
+    width: 35rem;
+    height: 35rem;
+    background-color: var(--gradient-1);
+    opacity: 0.5;
+    filter: blur(80px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 0.1s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 810px) {
+    body {
+        width: 100vw;
+        display: flex;
+    }
+    div.solid {
+        width: 70%;
+        margin-left: 18vw;
+
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+<div class="res-group education">
+    <h1><i class="fa-solid fa-user-graduate"></i>{{title}}</h1>
+    <div class="ed-group" *ngFor="let ed of education" (click)="clickEvent()"  
+    [ngClass]="status ? 'active' : 'inactive'">
+        <h5>{{ed.dates}}</h5>
+        <div>
+            <h3>
+                <span>{{ed.company}}<span class="text-separator">|</span></span>
+                <span>{{ed.role}}<span class="text-separator">|</span></span>
+                <span>{{ed.degree}}</span>
+            </h3>
+            <ul id="ed-list">
+                <li *ngFor="let b of ed.bullets" [innerHTML]="b" class="ed"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="solid"></div>
