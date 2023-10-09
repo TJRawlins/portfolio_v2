@@ -43,7 +43,7 @@ export class CanvasComponent implements OnInit  {
         show() {
           context!.beginPath()
           context!.arc(this.x, this.y, this.s, 0, 2 * Math.PI);
-          context!.fillStyle = "#fddba3";
+          context!.fillStyle = "#50b8a8";
           context!.fill();
         } 
       }
@@ -99,7 +99,7 @@ export class CanvasComponent implements OnInit  {
         loop();
       })
       loop();
-      setInterval(loop, 1000/60)
+      // setInterval(loop, 1000/60)
 
     }
 
