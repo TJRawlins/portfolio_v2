@@ -1,5 +1,8 @@
 <div class="res-group education">
-    <h1><i class="fa-solid fa-user-graduate"></i>{{title}}</h1>
+    <div class="cloud-title">
+        <!-- <h1><i class="fa-solid fa-user-graduate"></i>{{title}}</h1> -->
+        <h1><i class="fa-solid fa-user-graduate"></i></h1>
+    </div>
     <div class="ed-group" *ngFor="let ed of education" (click)="clickEvent()"  
     [ngClass]="status ? 'active' : 'inactive'">
         <h5>{{ed.dates}}</h5>
@@ -14,5 +17,7 @@
             </ul>
         </div>
     </div>
+    <div class="progress-wrapper-ed">
+        <div id="rocket-blast"></div>
+    </div>
 </div>
-<div class="solid"></div>

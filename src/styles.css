@@ -4,7 +4,7 @@
     --primary-color: #5eead4;
     --secondary-color: #ebf0fe;
     --tertiary-color: #7c8db9;
-    --primary-color-dull: #50b8a8;
+    --primary-color-dull: #51b8a9;
     --primary-color-opaque: #5eead51a;
     --primary-color-false-opaque: #253e5a;
     /* --opaque: #7c8db907; */
@@ -41,6 +41,8 @@ canvas {
 div.solid {
     margin-left: 35vw;
     width: 30vw;
+    padding: 1rem 0;
+    margin-top: 2rem;
     border-radius: 50%;
     border-top: 5px solid var(--opaque);
 }
@@ -52,7 +54,6 @@ div.solid {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
 .res-group h1 {

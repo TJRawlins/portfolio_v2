@@ -6,6 +6,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { TechnologyComponent } from './technology/technology.component';
 import { EducationComponent } from './education/education.component';
 import { CanvasComponent } from './canvas/canvas.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CanvasComponent } from './canvas/canvas.component';
     WorkExperienceComponent,
     TechnologyComponent,
     EducationComponent,
-    CanvasComponent
+    CanvasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

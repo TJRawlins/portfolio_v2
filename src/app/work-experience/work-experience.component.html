@@ -1,5 +1,10 @@
 <div class="res-group experience">
-    <h1><i class="fa-solid fa-briefcase"></i>{{title}}</h1>
+    <!-- <h1><i class="fa-solid fa-briefcase"></i>{{title}}</h1> -->
+    <img id="rocket" src=".\assets\rocket1.png" alt="">
+    <span id="glow"></span>
+    <div class="cloud-title">
+        <h1><i class="fa-solid fa-briefcase"></i></h1>
+    </div>
     <div class="work-group" *ngFor="let exp of experiences" (click)="clickEvent()"  
     [ngClass]="status ? 'active' : 'inactive'">
         <h5>{{exp.dates}}</h5>
@@ -14,5 +19,9 @@
             </ul>
         </div>
     </div>
+    <div class="progress-wrapper-tech">
+        <!-- <i class="fa-solid fa-rocket"></i> -->
+        <div id="rocket-blast"></div>
+    </div>
 </div>
-<div class="solid"></div>
+<!-- <div class="solid"></div> -->

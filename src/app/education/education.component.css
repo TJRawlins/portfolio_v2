@@ -1,14 +1,26 @@
 .res-group.education {
     position: relative;
+    width: 100%;
+    padding: 0;
 }
-.res-group.education::before {
-    position: absolute;
-    top: 6rem;
-    content: "";
-    width: 5px;
-    height: 50%;
-    background-color: var(--opaque);
-    z-index: -1;
+
+.cloud-title {
+    color: var(--tertiary-color);
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    background-image: url('/assets/launch-cloud2.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.cloud-title h1 {
+    vertical-align: center;
+    margin-top: 3rem !important;
+    font-size: 3.5rem;
 }
 
 li.ed {
@@ -72,7 +84,7 @@ li.ed {
     background-color: var(--gradient-1);
     max-height: 800px;
     padding-bottom: 0;
-    transition: all .5s ease-out;
+    transition: all 1s ease-out;
 }
 
 .ed-group ul {
@@ -183,6 +195,23 @@ i, .ed-group.active > i {
     color: var(--primary-color);
     background-color: var(--primary-color-opaque);
 }
+
+.progress-wrapper-ed {
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform: translateX(-3px) translateY(-50px);
+    z-index: -1;
+}
+
+.progress-wrapper-ed #rocket-blast {
+    width: 32px;
+    height: 100%;
+    background-color: white;
+}
+
 
 @media screen and (max-width: 1450px) {
 

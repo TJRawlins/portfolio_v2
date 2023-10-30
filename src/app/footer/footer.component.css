@@ -1,0 +1,58 @@
+#footer-wrapper {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-top: 2rem;
+    /* background-color: red; */
+}
+
+#launch {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url('/assets/launch2.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+#skyline {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 800px;
+    background-image: url('/assets/skyline.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.25;
+}
+#astronaut {
+    position: absolute;
+    bottom: 250vh;
+    right: 10vw;
+    width: 100px;
+    height: 100px;
+    background-image: url('/assets/astronaut.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.3;
+}
+#satellite {
+    position: absolute;
+    bottom: 150vh;
+    right: 30vw;
+    width: 100px;
+    height: 100px;
+    background-image: url('/assets/satellite2.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.3;
+}

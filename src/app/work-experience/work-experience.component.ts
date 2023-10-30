@@ -10,7 +10,18 @@ export class WorkExperienceComponent {
   title: string = "Experience";
   experiences = [
     {
-      dates: "AUG 2021 - Present",
+      dates: "NOV 2023 - Present",
+      company: "CSC Global Inc.",
+      role: "Software Engineer",
+      location: "Remote",
+      bullets: [
+        "<i class='fa-solid fa-circle-chevron-right'></i> Build, test and maintain code for proprietary corporate tax software",
+        "<i class='fa-solid fa-circle-chevron-right'></i> Works as a member of a <span class='tech'>Scrum</span> Team using <span class='tech'>Agile</span> principles.",
+        "<i class='fa-solid fa-circle-chevron-right'></i> Utilizing the following technologies and frameworks: <span class='tech'>C#</span>, <span class='tech'>Java</span>, <span class='tech'>.Net</span>, <span class='tech'>Angular</span> and <span class='tech'>Bootstrap</span>. ",
+      ]
+    },
+    {
+      dates: "AUG 2021 - NOV 2023",
       company: "CSC Global Inc.",
       role: "Application Support",
       location: "Remote",

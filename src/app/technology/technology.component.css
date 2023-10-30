@@ -21,6 +21,10 @@
     background-color: var(--primary-color);
 }
 
+#satellite {
+    width: 120px;
+}
+
 /* Media query */
 @media screen and (max-width: 1450px) {
     #item-container {
