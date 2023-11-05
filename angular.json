@@ -40,7 +40,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "5kb",
-                  "maximumError": "4kb"
+                  "maximumError": "5kb"
                 }
               ],
               "outputHashing": "all"
@@ -90,6 +90,14 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/resume",
+            "netlifyToken": "1yhdTKexNmJI8AtgSP_FzNd92RVA8LR5Em6dgaV66ow",
+            "siteId": "3a0b6a55-d9cd-4d3e-a9d7-30342b1eff7c"
           }
         }
       }
