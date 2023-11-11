@@ -17,7 +17,7 @@ export class WorkExperienceComponent {
       bullets: [
         "<i class='fa-solid fa-circle-chevron-right'></i> Build, test and maintain code for proprietary corporate tax software",
         "<i class='fa-solid fa-circle-chevron-right'></i> Works as a member of a <span class='tech'>Scrum</span> Team using <span class='tech'>Agile</span> principles.",
-        "<i class='fa-solid fa-circle-chevron-right'></i> Utilizing the following technologies and frameworks: <span class='tech'>C#</span>, <span class='tech'>Java</span>, <span class='tech'>.Net</span>, <span class='tech'>Angular</span> and <span class='tech'>Bootstrap</span>. ",
+        "<i class='fa-solid fa-circle-chevron-right'></i> Utilizing the following technologies and frameworks: <span class='tech'>C#</span>, <span class='tech'>.Net</span>, <span class='tech'>React</span> and <span class='tech'>Bootstrap</span>. ",
       ]
     },
     {
